@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+   
+    <section class="course">
+        <h1>Academic Programs</h1>
+        <p>Explore our comprehensive range of educational opportunities</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate</h3>
+                <p>Build foundational knowledge with our bachelor's degree programs, designed to provide comprehensive education in your chosen field. Develop critical thinking skills through our interdisciplinary curriculum.</p>
+            </div>
+            <div class="course-col">
+                <h3>Graduate</h3>
+                <p>Advance your expertise with our master's programs featuring specialized coursework, research opportunities, and professional development. Prepare for leadership roles in your industry or academia.</p>
+            </div>
+            <div class="course-col">
+                <h3>Doctoral</h3>
+                <p>Pursue original research with our PhD programs under the mentorship of distinguished faculty. Contribute new knowledge to your discipline while developing advanced research skills.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Facilities ---------->
+   
+    <section class="facility">
+        <h1>Campus Facilities</h1>
+        <p>State-of-the-art resources to support your academic journey</p>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="images/library.png">
+                    <h3>Research Library</h3>
+                    <p>Our seven-story library houses over 2 million volumes, specialized collections, and extensive digital resources accessible 24/7.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/basketball.png">
+                    <h3>Athletic Complex</h3>
+                    <p>Olympic-quality facilities including courts, fields, a swimming pool, and fitness center for student wellness and competition.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Dining Commons</h3>
+                    <p>Multiple dining options featuring global cuisines, dietary accommodations, and sustainably sourced ingredients.</p>
+                </div>
+            </div>
+    </section>
+    
+  <!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford University is a leading institution of higher learning, renowned for its commitment to academic excellence, research innovation, and global engagement.<br>We empower students to achieve their full potential and make a positive impact in the world.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Eduford University</p>
+</section>
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
